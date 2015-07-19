@@ -23,9 +23,7 @@ public class Choose extends Pattern {
 
   @Override
   public String toString() {
-    List<Pattern> patterns = Arrays.asList(first, second);
-    return String.join("|", patterns.stream().map(pattern -> pattern.bracket(getPrecedence()))
-        .collect(Collectors.toList()));
+    return "/" + first.bracket(getPrecedence()) + "|" + second.bracket(getPrecedence()) + "/";
   }
 
   @Override
