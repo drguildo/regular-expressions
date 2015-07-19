@@ -1,14 +1,12 @@
 package io.sjm.regex;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Set;
-import java.util.UUID;
-import java.util.stream.Collectors;
-
 import io.sjm.automata.FARule;
 import io.sjm.automata.NFADesign;
 import io.sjm.automata.NFARuleBook;
+
+import java.util.Set;
+import java.util.UUID;
+import java.util.stream.Collectors;
 
 public class Concatenate extends Pattern {
   private Pattern first;
@@ -26,9 +24,7 @@ public class Concatenate extends Pattern {
 
   @Override
   public String toString() {
-    List<Pattern> patterns = Arrays.asList(first, second);
-    return String.join("", patterns.stream().map(pattern -> pattern.bracket(getPrecedence()))
-        .collect(Collectors.toList()));
+    return first.bracket(getPrecedence()) + "" + second.bracket(getPrecedence());
   }
 
   @Override

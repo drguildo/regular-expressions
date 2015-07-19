@@ -1,11 +1,8 @@
 package io.sjm.regex;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.UUID;
-import java.util.stream.Collectors;
-
 import io.sjm.automata.NFADesign;
+
+import java.util.UUID;
 
 public class Choose extends Pattern {
   private Pattern first;
