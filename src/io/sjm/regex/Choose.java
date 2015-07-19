@@ -23,7 +23,7 @@ public class Choose extends Pattern {
 
   @Override
   public String toString() {
-    return "/" + first.bracket(getPrecedence()) + "|" + second.bracket(getPrecedence()) + "/";
+    return "/" + first.bracket(getPrecedence()) + second.bracket(getPrecedence()) + "/";
   }
 
   @Override
