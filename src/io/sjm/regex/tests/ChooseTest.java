@@ -1,26 +1,38 @@
 package io.sjm.regex.tests;
 
-import static org.junit.Assert.assertEquals;
-
+import io.sjm.automata.NFADesign;
+import io.sjm.regex.Choose;
+import io.sjm.regex.Literal;
 import org.junit.Before;
 import org.junit.Test;
 
-import io.sjm.regex.Choose;
-import io.sjm.regex.Literal;
+import java.util.UUID;
+
+import static org.junit.Assert.*;
 
 public class ChooseTest {
-  private Literal first, second;
   private Choose choose;
+  private NFADesign<UUID> nfa;
 
   @Before
   public void setUp() throws Exception {
-    first = new Literal('a');
-    second = new Literal('b');
-    choose = new Choose(first, second);
+    choose = new Choose(new Literal('a'), new Literal('b'));
+    nfa = choose.toNFADesign();
   }
 
   @Test
   public void test() {
     assertEquals("a|b", choose.toString());
+  }
+
+  @Test
+  public void testToNFADesign() throws Exception {
+    assertTrue(nfa.accepts("a"));
+    assertTrue(nfa.accepts("b"));
+
+    assertFalse(nfa.accepts(""));
+    assertFalse(nfa.accepts("c"));
+    assertFalse(nfa.accepts("ab"));
+    assertFalse(nfa.accepts("ba"));
   }
 }
