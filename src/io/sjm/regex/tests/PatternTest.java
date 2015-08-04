@@ -1,15 +1,10 @@
 package io.sjm.regex.tests;
 
-import static org.junit.Assert.*;
-
+import io.sjm.regex.rules.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import io.sjm.regex.Choose;
-import io.sjm.regex.Concatenate;
-import io.sjm.regex.Literal;
-import io.sjm.regex.Pattern;
-import io.sjm.regex.Repeat;
+import static org.junit.Assert.assertEquals;
 
 public class PatternTest {
   private Pattern p;

@@ -1,11 +1,11 @@
-package io.sjm.regex;
-
-import static io.sjm.stdlib.datastructures.Sets.buildSet;
-
-import java.util.UUID;
+package io.sjm.regex.rules;
 
 import io.sjm.automata.NFADesign;
 import io.sjm.automata.NFARuleBook;
+
+import java.util.UUID;
+
+import static io.sjm.stdlib.datastructures.Sets.buildSet;
 
 public class Literal extends Pattern {
   private Character c;

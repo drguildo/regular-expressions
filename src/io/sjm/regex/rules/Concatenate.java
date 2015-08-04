@@ -1,4 +1,4 @@
-package io.sjm.regex;
+package io.sjm.regex.rules;
 
 import io.sjm.automata.FARule;
 import io.sjm.automata.NFADesign;

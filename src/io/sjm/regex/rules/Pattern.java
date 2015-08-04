@@ -1,8 +1,8 @@
-package io.sjm.regex;
-
-import java.util.UUID;
+package io.sjm.regex.rules;
 
 import io.sjm.automata.NFADesign;
+
+import java.util.UUID;
 
 public abstract class Pattern {
   public String bracket(Integer outerPrecedence) {

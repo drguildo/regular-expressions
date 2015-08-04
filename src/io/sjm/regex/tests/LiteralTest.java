@@ -1,10 +1,10 @@
 package io.sjm.regex.tests;
 
-import static org.junit.Assert.*;
-
+import io.sjm.regex.rules.Literal;
 import org.junit.Test;
 
-import io.sjm.regex.Literal;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class LiteralTest {
   private Literal l;

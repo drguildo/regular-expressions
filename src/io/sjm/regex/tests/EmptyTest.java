@@ -1,11 +1,11 @@
 package io.sjm.regex.tests;
 
-import static org.junit.Assert.*;
-
+import io.sjm.regex.rules.Empty;
 import org.junit.Before;
 import org.junit.Test;
 
-import io.sjm.regex.Empty;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class EmptyTest {
   private Empty e;

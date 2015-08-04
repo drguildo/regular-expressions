@@ -1,8 +1,8 @@
 package io.sjm.regex.tests;
 
 import io.sjm.automata.NFADesign;
-import io.sjm.regex.Choose;
-import io.sjm.regex.Literal;
+import io.sjm.regex.rules.Choose;
+import io.sjm.regex.rules.Literal;
 import org.junit.Before;
 import org.junit.Test;
 

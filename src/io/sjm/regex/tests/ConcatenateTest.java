@@ -1,12 +1,11 @@
 package io.sjm.regex.tests;
 
-import static org.junit.Assert.*;
-
+import io.sjm.regex.rules.Concatenate;
+import io.sjm.regex.rules.Literal;
 import org.junit.Before;
 import org.junit.Test;
 
-import io.sjm.regex.Concatenate;
-import io.sjm.regex.Literal;
+import static org.junit.Assert.*;
 
 public class ConcatenateTest {
   private Literal first, second;
