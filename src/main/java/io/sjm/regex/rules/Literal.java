@@ -5,7 +5,7 @@ import io.sjm.automata.NFARuleBook;
 
 import java.util.UUID;
 
-import static io.sjm.stdlib.datastructures.Sets.buildSet;
+import static io.sjm.sjmlib.datastructures.Sets.buildSet;
 
 public class Literal extends Pattern {
   private Character c;

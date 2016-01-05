@@ -3,7 +3,7 @@ package io.sjm.regex.rules;
 import io.sjm.automata.FARule;
 import io.sjm.automata.NFADesign;
 import io.sjm.automata.NFARuleBook;
-import io.sjm.stdlib.datastructures.Sets;
+import io.sjm.sjmlib.datastructures.Sets;
 
 import java.util.Set;
 import java.util.UUID;
